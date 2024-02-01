@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web cu Butoane</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="apelareFunctie('/functie1')">Funcția 1</button>
+    <button onclick="apelareFunctie('/functie2')">Funcția 2</button>
+    <button onclick="apelareFunctie('/functie3')">Funcția 3</button>
+    <button onclick="apelareFunctie('/functie4')">Funcția 4</button>
+
+    <script>
+        function apelareFunctie(route) {
+            fetch(route)
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: 2px solid #4caf50;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #29862e; /* Schimbă culoarea la survol */
+    border-color: #9dc79f; /* Schimbă culoarea marginii la survol */
+    opacity: 0.9; /* Reduce opacitatea la survol */
+}
